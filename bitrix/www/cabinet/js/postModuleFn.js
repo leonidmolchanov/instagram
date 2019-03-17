@@ -12,6 +12,7 @@ accounts.forEach(function (item) {
 function getPost(data) {
     // Проверяем что введено поле имяни анализируемого аккаунта
     if ($("#accName").val()) {
+        console.log('a')
         // Отправляем запрос на сервер
         ws.send(JSON.stringify({
             type: 'startLoad',

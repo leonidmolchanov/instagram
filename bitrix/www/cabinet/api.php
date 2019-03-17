@@ -7,8 +7,12 @@ if($_REQUEST['sessid']==bitrix_sessid() || $_REQUEST['token']==$NODE_TOKEN):
         require("include/addAccSet.php");
     elseif($_REQUEST['type']=='delete'):
         require("include/delAccSet.php");
+    elseif($_REQUEST['type']=='createAccList1'):
+        require("include/createAccList1.php");
     elseif($_REQUEST['type']=='setDefaultAcc'):
         require("include/setDefaultAcc.php");
+    elseif($_REQUEST['type']=='changeAccState'):
+        require("include/changeAccState.php");
     elseif($_REQUEST['type']=='addProfileAcc'):
         require("include/addProfileAcc.php");
     elseif($_REQUEST['type']=='delProfileAcc'):
